@@ -1,5 +1,10 @@
-﻿Console.Clear();
-int a = new Random().Next(100, 1000);
-Console.WriteLine($"number: {a}");
-string str = a.ToString();
-Console.WriteLine($"{str[0]}{str[2]}");
+﻿internal class Program //Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+{
+    private static void Main(string[] args)
+    {
+        Console.Clear();
+        Console.WriteLine("Enter three-digit number: ");
+        string? number = Console.ReadLine();
+        Console.WriteLine(number[1]);        
+    }
+}
