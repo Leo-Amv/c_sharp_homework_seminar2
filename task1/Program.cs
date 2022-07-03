@@ -5,6 +5,7 @@
         Console.Clear();
         Console.WriteLine("Enter three-digit number: ");
         string? number = Console.ReadLine();
+        if (number!=null)
         Console.WriteLine(number[1]);        
     }
 }
