@@ -4,15 +4,20 @@
     {
         Console.Clear();
         Console.WriteLine("Enter the number: ");
-        string number = Console.ReadLine();            
-        if (number.Length < 3)
+        string? number = Console.ReadLine();
+        if(number!=null)
+        {
+            string str = Convert.ToString(number);
+            if (str.Length < 3)
         {
             Console.WriteLine("Third digit does not exist!");
         }
         else
         {
             Console.WriteLine(number[2]);
+        }            
         }
+        
         
     }
 }
